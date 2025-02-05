@@ -1,0 +1,8 @@
+.env
+__pycache__/
+lib/
+.DS_Store
+.mypy_cache
+uv.lock
+.venv
+poem.txt
