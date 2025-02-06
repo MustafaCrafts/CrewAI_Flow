@@ -1,0 +1,21 @@
+[project]
+name = "project1"
+version = "0.1.0"
+description = "Project1 using crewAI"
+authors = [{ name = "MustafaCrafts", email = "mustafadeel989@gmail.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.98.0,<1.0.0",
+    "litellm>=1.57.4",
+]
+
+[project.scripts]
+kickoff = "project1.main:kickoff"
+Kickoff2 = "project1.main2:test_router"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
